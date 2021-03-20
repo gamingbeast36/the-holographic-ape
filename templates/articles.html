@@ -1,6 +1,37 @@
 {%extends "base.html"%}
 
-{% block body %}
+{% block head %}
+    <title>Articles</title>
+    <style>
+        body {
+         background: url("{{ url_for('static',filename='images/articlesbg.jpg') }}");
+         background-position: center center;
+         background-repeat: no-repeat;
+         background-attachment: fixed;
+         background-size: cover;
+         background-color: #464646; 
+        }
+    </style>
 
-    <p>You DID It nIGgA </p>
+{% endblock %}
+{% block body %}
+    <div class="heading" name="responsive" >
+        <h1 style="font-family: 'Dancing Script', cursive; text-align: center;font-size:5vw; color:#041a2f;position: relative;
+            top: 70px;">The Holographic Ape</h1>
+    </div>
+    <u style="font-family:'Roboto', sans-serif; text-align: left,center;font-size:2vw; color:#000000;position: relative;
+    top: 120px;left: 8%;">Featured Articles</u>
+    <ul>
+        <li style="font-family:'Roboto', sans-serif; text-align: left,center;font-size:1.5vw; color:#000000;position: relative;
+        top: 120px;left: 8%;">Is it okay to be fat?</li>
+        <li style="font-family:'Roboto', sans-serif; text-align: left,center;font-size:1.5vw; color:#000000;position: relative;
+        top: 120px;left: 8%;">More cool articles coming soon</li>
+
+
+
+
+    </ul>
+
+
+
 {% endblock %}
